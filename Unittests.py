@@ -3,14 +3,11 @@ __author__ = 'Florian Kibler'
 import unittest
 
 
-class MyTestCase(unittest.TestCase):
+class Filenichtkorrekt(unittest.TestCase):
     """
     def test_something(self):
         self.assertEqual(True, False)
     """
-
-    def test_UnterschiedlicheDialekte(selfself):
-        pass;
 
     def test_Dateinichtvorhanden(self):
         pass;
@@ -21,8 +18,17 @@ class MyTestCase(unittest.TestCase):
     def test_KeinDateiinhalt(self):
         pass;
 
-    def test_KorrekteAusfuehrung(self):
+class TestsKorrekteAusfuehrung(unittest.TestCase):
+
+    def test_korrekteAusfuehrungeinFile(self):
         pass;
+
+    def test_MehrereFiles_gleicherDialekt(self):
+        pass;
+
+    def test_MehrereFiles_unterschiedlicherDialekt(self):
+        pass;
+
 
 
 if __name__ == '__main__':
